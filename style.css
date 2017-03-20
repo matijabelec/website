@@ -1,0 +1,140 @@
+body{
+  font-family: 'Acme', sans-serif;
+}
+
+.page-section{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.page-section::after, main section::after{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.main-section, .top-section{
+  background-color: #456990;
+  color: #e8e9f3;
+  z-index: 10;
+}
+.main-section{
+  z-index: 9;
+  box-shadow: 0 0 6px 2px #555;
+}
+
+.content{
+  display: block;
+  margin: auto;
+  width: 720px;
+  max-width: 92%;
+}
+
+a{
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #e8e9f3;
+}
+a:hover{
+  color: #a8c9d3;
+}
+
+header{
+  position: relative;
+  text-align: left;
+  margin-top: 32px;
+}
+nav{
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main .section ul{
+  display: block;
+  text-align: center;
+}
+nav ul li, main .section ul li{
+  display: inline-block;
+}
+nav ul li a{
+  font-size: 1.2em;
+  padding-left: .4em;
+}
+main .section ul li a{
+  padding: .7em;
+}
+
+main article, main section, main .section{
+  display: block;
+  padding: 1em;
+  font-size: 1.8em;
+  line-height: 1.75;
+}
+main article{
+  margin-top: 48px;
+  text-align: center;
+  padding: 4em 0;
+}
+main section h3{
+  display: block;
+  float: left;
+  width: 8em;
+}
+
+footer{
+  display: block;
+  font-size: .8em;
+  text-align: left;
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+footer .footer-quote{
+  display: inline-block;
+  line-height: 1.5;
+}
+footer a{
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #f45b69;
+  padding-left: .4em;
+}
+
+.mb-list-fly{
+  display: inline-block;
+  position: relative;
+  top: .3em;
+  right: 0;
+  vertical-align: top;
+}
+.mb-list-fly li{
+  font-size: .6em;
+  font-weight: 200;
+}
+.mb-list-fly li a{
+  font-size: 1em;
+}
+.mb-list-fly li span{
+  font-size: 1em;
+  font-weight: 400;
+  color: #f45b69;
+}
+.mb-list-fly li span::before{
+  display: inline;
+  content: '/';
+  font-size: .8em;
+  font-weight: 400;
+  padding-left: .1em;
+  color: #f45b69;
+}
+
+.colorize{
+  color: #f45b69;
+  font-size: 1.4em;
+}
+
+@media all and (min-width: 480px){
+  main .section ul li a{
+    padding: 1.1em;
+  }
+}
